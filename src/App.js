@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Main from './components/main/Main';
+import Secondary from './components/secondary/Secondary';
 
 function App() {
+
+  const apiKey = 'f2139a7ba4e35840983f00604484496a';
+  const city = 'London';
+  const countryCode = 'uk';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?id=147422&appid=${apiKey}`;
+                  
+  
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // Do something with the weather data here
+    })
+    .catch(error => {
+      console.error('Error fetching weather data:', error);
+    });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main />
+      <Secondary />
     </div>
   );
 }
 
 export default App;
+
+

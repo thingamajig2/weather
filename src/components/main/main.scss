@@ -1,0 +1,121 @@
+.main{
+    width: 480px;
+    height: 480px;
+    border: 1px solid gray;
+    background-color: rgb(114, 106, 188);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tempnow{
+        width: 458px;
+        height: 400px;
+        padding: 12px;
+        background-color:rgb(118, 106, 211);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+            .location{
+                display: flex;
+                height: 100%;
+            }
+                .locationimg{
+                    width:20px;
+                    height:20px;
+            }
+                span{
+                    color: rgb(149, 140, 223);
+                    font-weight: 500;
+                }
+            .icon{
+                display: flex;
+                align-items: flex-start;
+            }
+            .temp{
+                    display:flex;
+                    flex-direction: column;
+                    .hightemp{
+                        color:rgb(255, 255, 255);
+                        font-size: 14px;
+                        font-weight:600;
+                    }
+                    .lowtemp{
+                        color:rgb(213, 210, 240);
+                        font-size: 14px;
+                        font-weight:600;
+                    }
+                span{
+                    padding: 0 10px;
+                    color:rgb(255, 255, 255);
+                    font-size: 80px;
+                    font-weight: 600;
+                sup{
+                    font-size: 15px;
+                }
+                }
+            }
+        }
+        .statistics{
+            background-color:rgb(140, 97, 203);
+            width: 456px;
+            height:60px;
+            display:flex;
+            .wind{
+                width: 146.67px;
+                height: 60px;
+                background: rgba(102, 96, 200, 0.54);
+                border-radius: 6px;
+                flex: none;
+                order: 0;
+                flex-grow: 1;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color:white;
+                }
+            }
+            .humidity{
+                width: 146.67px;
+                height: 60px;
+                background: rgba(102, 96, 200, 0.54);
+                border-radius: 6px;
+                flex: none;
+                order: 0;
+                flex-grow: 1;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: white;
+                }
+            }
+            .rainpercentage{
+                width: 146.67px;
+                height: 60px;
+                background: rgba(102, 96, 200, 0.54);
+                border-radius: 6px;
+                flex: none;
+                order: 0;
+                flex-grow: 1;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: white;
+                }
+            }
+        }
+}
